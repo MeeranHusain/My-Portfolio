@@ -393,11 +393,19 @@ h1 {
   }
 }
 /* projects */
+
 .projs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
+
+@media (max-width: 720px) {
+    .projs {
+        grid-template-columns: 1fr;
+    }
+}
+
 .proj {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -1005,3 +1013,31 @@ body {
 .skill-chip:hover .skill-logo {
   transform: scale(1.18);
 }
+
+
+/* Project GitHub Links */
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 16px;
+    padding: 10px 16px;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.project-link:hover {
+    background: var(--accent);
+    color: #06120c;
+    transform: translateY(-2px);
+}
+
+

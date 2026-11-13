@@ -8,14 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="css/style.css" />
+    
+    <meta name="description" content="Meeran Husain is a Software Developer specializing in Core PHP, MySQL, REST APIs and Python Django development. Explore his professional experience and projects.">
+    <meta name="author" content="Meeran Husain">
+    <meta name="theme-color" content="#070b09">
   </head>
   <body>
     <header class="nav">
       <div class="wrap">
         <a class="logo" href="#top">Meeran Husain</a>
         <nav id="menu" aria-label="Main">
-          <a href="#experience">Experience</a><a href="#skills">Skills</a>
-          <a href="#projects">Projects</a><a href="#education">Education</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </nav>
         <div class="acts">
@@ -130,6 +138,30 @@
                   issues.
                 </li>
               </ul>
+
+              <div class="company-work">
+                <h4>Key Contributions</h4>
+                <ul>
+                  <li>Developed and maintained business web applications using Core PHP and MySQL.</li>
+                  <li>Implemented backend modules, CRUD operations and database functionality.</li>
+                  <li>Worked on REST API integration and SQL queries.</li>
+                  <li>Resolved production bugs and improved application security.</li>
+                  <li>Developed dynamic reporting and dashboard functionality using AJAX and jQuery.</li>
+                </ul>
+
+                <h4>Technology Stack</h4>
+                <div class="chips">
+                  <span>Core PHP</span>
+                  <span>MySQL</span>
+                  <span>SQL</span>
+                  <span>REST APIs</span>
+                  <span>JavaScript</span>
+                  <span>jQuery</span>
+                  <span>AJAX</span>
+                  <span>Git</span>
+                </div>
+              </div>
+            
             </div>
             <div class="job">
               <h3>Software Developer Intern</h3>
@@ -215,99 +247,219 @@
       <section id="projects">
         <div class="wrap">
           <h2>Projects</h2>
-          <div class="projs">
-            <article class="proj">
-              <h3>Dynamic Web Applications</h3>
-              <p class="tag">Zeki Software Solutions · Oct 2025 – Present</p>
-              <ul>
-                <li>
-                  Built and improved features for the PFS, SSMS and Books web
-                  applications.
-                </li>
-                <li>
-                  Developed admin panels and dashboards with a responsive UI.
-                </li>
-                <li>
-                  Used AJAX and jQuery to update the page without a reload.
-                </li>
-                <li>Added interactive data visualization with Chart.js.</li>
-              </ul>
-              <div class="stack">
-                <div class="row">
-                  <b>Frontend</b>
-                  <div class="chips">
-                    <span>jQuery</span><span>AJAX</span><span>Chart.js</span>
+
+            <div class="projs">
+
+              <!-- Project 1: Pharmacy Management System -->
+              <article class="proj">
+                <h3>Pharmacy Management System</h3>
+                <p class="tag">Personal Project · Python Django </p>
+
+                <p>
+                  A Django-based pharmacy management application
+                  designed to manage medicine products and store operations.
+                </p>
+
+                <ul>
+                  <li>E-commerce functionality for medicines.</li>
+                  <li>User authentication and product management.</li>
+                  <li>Admin dashboard to manage the store.</li>
+                </ul>
+
+                <div class="stack">
+                  <div class="row">
+                    <b>Frontend</b>
+                    <div class="chips">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <b>Backend</b>
+                    <div class="chips">
+                      <span>Python</span>
+                      <span>Django</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <b>Database</b>
+                    <div class="chips">
+                      <span>SQLite</span>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <b>Backend</b>
-                  <div class="chips"><span>Core PHP</span></div>
+
+                <div class="project-links">
+                  <a class="project-link" href="https://github.com/MeeranHusain/PMS" target="_blank" rel="noopener">
+                    GitHub Repository ↗
+                  </a>
                 </div>
-                <div class="row">
-                  <b>Database</b>
-                  <div class="chips"><span>MySQL</span></div>
-                </div>
-              </div>
-            </article>
-            <article class="proj">
-              <h3>Pharmacy Management System</h3>
-              <p class="tag">E-commerce for medicines · Live · Dec 2024</p>
-              <ul>
-                <li>
-                  E-commerce platform with authentication and product
-                  management.
-                </li>
-                <li>Admin dashboard to manage the store.</li>
-              </ul>
-              <div class="stack">
-                <div class="row">
-                  <b>Frontend</b>
-                  <div class="chips">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </article>
+
+
+              <!-- Project: JARVIS AI Voice Assistant -->
+              <article class="proj">
+                <h3>JARVIS – AI Voice Assistant</h3>
+
+                <p class="tag">Personal Project · Python · AI Automation</p>
+
+                <p>
+                  A Python-based voice-activated virtual assistant
+                  that listens for voice commands, performs tasks
+                  and provides AI-powered responses.
+                </p>
+
+                <ul>
+                  <li>Wake-word detection using "Jarvis".</li>
+                  <li>Voice recognition and text-to-speech responses.</li>
+                  <li>AI-powered responses using Ollama Cloud.</li>
+                  <li>Website launching and music playback.</li>
+                  <li>Indian news fetching and voice announcements.</li>
+                  <li>Secure API configuration using environment variables.</li>
+                </ul>
+
+                <div class="stack">
+                  <div class="row">
+                    <b>Language</b>
+                    <div class="chips">
+                      <span>Python</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <b>AI / Voice</b>
+                    <div class="chips">
+                      <span>Ollama</span>
+                      <span>SpeechRecognition</span>
+                      <span>pyttsx3</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <b>Libraries</b>
+                    <div class="chips">
+                      <span>PyAudio</span>
+                      <span>Requests</span>
+                      <span>python-dotenv</span>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <b>Backend</b>
-                  <div class="chips">
-                    <span>Python</span><span>Django</span>
+
+                <div class="project-links">
+                  <a
+                    class="project-link"
+                    href="https://github.com/MeeranHusain/JARVIS-VOICE-ACTIVATED-VIRTUAL-ASSISTANT"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub Repository ↗
+                  </a>
+                </div>
+              </article>
+
+
+              <!-- Project 2: User Management System -->
+              <article class="proj">
+                <h3>User Management System</h3>
+                <p class="tag">Personal Project · Django CRUD </p>
+
+                <p>
+                  A user management application developed using
+                  Django's MVT architecture and ORM.
+                </p>
+
+                <ul>
+                  <li>CRUD operations for user management.</li>
+                  <li>Database operations using Django ORM.</li>
+                  <li>Responsive user interface.</li>
+                </ul>
+
+                <div class="stack">
+                  <div class="row">
+                    <b>Frontend</b>
+                    <div class="chips">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <b>Backend</b>
+                    <div class="chips">
+                      <span>Python</span>
+                      <span>Django</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <b>Database</b>
+                    <div class="chips">
+                      <span>SQLite</span>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <b>Database</b>
-                  <div class="chips"><span>SQLite</span></div>
+
+                <div class="project-links">
+                  <a class="project-link" href="https://github.com/MeeranHusain/Django" target="_blank" rel="noopener">
+                    GitHub Repository ↗
+                  </a>
                 </div>
-              </div>
-            </article>
-            <article class="proj">
-              <h3>User Management System</h3>
-              <p class="tag">CRUD application · Live · Dec 2024</p>
-              <ul>
-                <li>Django CRUD app built on the MVT architecture.</li>
-                <li>
-                  Responsive UI with database operations handled through the
-                  ORM.
-                </li>
-              </ul>
-              <div class="stack">
-                <div class="row">
-                  <b>Frontend</b>
-                  <div class="chips">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </article>
+
+
+              <!-- Project 3: Professional Experience -->
+              <article class="proj">
+                <h3>Dynamic Web Applications</h3>
+                <p class="tag">Zeki Software Solutions · Oct 2025 – Present</p>
+
+                <ul>
+                  <li>
+                    Built and improved features for PFS, SSMS and Books
+                    web applications.
+                  </li>
+                  <li>
+                    Developed admin panels and dashboards with responsive UI.
+                  </li>
+                  <li>
+                    Used AJAX and jQuery to update pages without reload.
+                  </li>
+                  <li>
+                    Added interactive data visualization with Chart.js.
+                  </li>
+                </ul>
+
+                <div class="stack">
+                  <div class="row">
+                    <b>Frontend</b>
+                    <div class="chips">
+                      <span>jQuery</span>
+                      <span>AJAX</span>
+                      <span>Chart.js</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <b>Backend</b>
+                    <div class="chips">
+                      <span>Core PHP</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <b>Database</b>
+                    <div class="chips">
+                      <span>MySQL</span>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <b>Backend</b>
-                  <div class="chips">
-                    <span>Python</span><span>Django</span>
-                  </div>
-                </div>
-                <div class="row">
-                  <b>Database</b>
-                  <div class="chips"><span>SQLite</span></div>
-                </div>
-              </div>
-            </article>
-          </div>
+              </article>
+
+            </div>
+
+
         </div>
       </section>
 
