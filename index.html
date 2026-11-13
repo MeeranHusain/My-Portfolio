@@ -1,279 +1,338 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meeran Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Meeran Husain</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Meeran Husain</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/Profile_pic_blob.jpg" alt="Meeran Husain profile picture" class="about-pic">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Meeran Husain</h1>
-            <p class="section__text__p2">Front-End Web Developer</p>
-            <!-- <p class="section__text__p2">Front-End Web Developer</p> -->
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Meeran_Husain_Resume_Updated.pdf')">Download
-                    Resume</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
-                    onclick="location.href='https://linkedin.com/'" />
-                <img src="./assets/github.png" alt="My GitHub Profile" class="icon"
-                    onclick="location.href='https://Github.com'" />
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <br>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/Meeran_pic2.jpg" alt="Profile picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p class="per_details">Oct 2025 - Present Software Developer at <b>Zeki Software Pvt Ltd</b></p>
-                        <p class="per_details">2+ Month Software Developer Intern at <b>Mettler Toledo</b></p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Education</h3>
-                        <p class="per_details">B.Tech in Computer Science</p>
-                        <p class="per_details">Diploma in Computer Science & Engineering</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Hi, I'm Meeran Husain, a passionate Full Stack Web Developer with expertise in Python, Django, JavaScript, and modern front-end frameworks. I specialize in building dynamic, responsive, and user-friendly web applications. Currently, I’m pursuing my B.Tech in Computer Science and Engineering while also advancing my skills through a Full Stack Web Development with AWS program.</p>
-                </div>
-                <br>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
-    </section><br>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Front-End Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>BootStrap</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Tailwind CSS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Ajax</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Back-End Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Basics</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Django</h3>
-                                <p>Basics</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>PHP</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>GitHub</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Pharmacy Management System (PMS) 💊</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MeeranHusain/PMS'">
-                            GitHub
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MeeranHusain/PMS'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Number Guessing Game using voice</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MeeranHusain/number-guessing'">
-                            GitHub
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://meeranhusain.github.io/number-guessing/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Bank Account Management System</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MeeranHusain/bank_account'">
-                            GitHub
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MeeranHusain/bank_account'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-          </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <title>Meeran Husain – Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap">
+        <a class="logo" href="#top">Meeran Husain</a>
+        <nav id="menu" aria-label="Main">
+          <a href="#experience">Experience</a><a href="#skills">Skills</a>
+          <a href="#projects">Projects</a><a href="#education">Education</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <p>Copyright &#169; 2024 Meeran Husain. All Rights Reserved.</p>
-        <img src="./assets/up-arrow.png" alt="Arrow icon" class="icon up-arrow" onclick="location.href='#desktop-nav'">
-    </footer>
-    <script src="script.js"></script>
-</body>
+        <div class="acts">
+          <button class="tbtn" id="theme" aria-label="Toggle light or dark theme">◐</button>
+          <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu" >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
 
+    <main id="top">
+      <section class="hero">
+        <canvas id="gl" class="gl" aria-hidden="true"></canvas>
+        <div class="wrap">
+          <div>
+            <h1>Meeran Husain</h1>
+            <p class="lead">
+              Full Stack Developer in Mumbai. I build and maintain web
+              applications with PHP, Django and MySQL, and I like fixing what’s
+              broken in the backend.
+            </p>
+            <div class="btns">
+              <a class="btn p" href="#projects">See my work</a>
+              <a class="btn" href="#contact">Get in touch</a>
+              <a class="btn" href="assets/docs/Meeran_Husain_Resume.pdf" target="_blank" download data-resume >Download resume</a>
+            </div>
+          </div>
+          <div class="pw">
+            <div class="photo">
+              <img src="assets/images/profile.jpg" alt="Portrait of Meeran Husain in a suit and blue tie" width="340" height="425"/>
+            </div>
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="query" aria-label="A SQL query describing Meeran Husain">
+            <div>
+              <span class="k">SELECT</span> name, role, city
+              <span class="k">FROM</span> developers
+              <span class="k">WHERE</span> role =
+              <span class="s">'<span id="qv">Python Django Developer</span><span class="caret"></span>'</span>;
+            </div>
+            <div class="res">
+              <table>
+                <tr>
+                  <th>name</th>
+                  <th>role</th>
+                  <th>city</th>
+                </tr>
+                <tr>
+                  <td data-l="name">Meeran Husain</td>
+                  <td data-l="role" id="qr">Python Django Developer</td>
+                  <td data-l="city">Mumbai</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="wrap">
+          <h2>About</h2>
+          <p>
+            I’m a Full Stack Developer with hands-on industry experience in PHP,
+            Python, Django and MySQL. I’m strongest on the backend:
+            authentication, sessions, CRUD flows, debugging and database work.
+          </p>
+          <p>
+            Day to day I ship features and resolve production issues on live
+            projects, and I build responsive admin panels and dashboards on top.
+          </p>
+          <div class="stats">
+            <div><b>Oct 2025</b><span>Started at Zeki Software</span></div>
+            <div><b>3+</b><span>Live web applications</span></div>
+            <div><b>B.Tech</b><span>Computer Science, 2025</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="wrap">
+          <h2>Experience</h2>
+          <div class="tl">
+            <div class="job">
+              <h3>Software Developer Engineer</h3>
+              <p class="meta">
+                Zeki Software Solutions Pvt. Ltd., Mumbai · Oct 2025 – Present
+              </p>
+              <ul>
+                <li>
+                  Develop and maintain dynamic web applications using Core PHP
+                  and MySQL.
+                </li>
+                <li>
+                  Implement backend logic: CRUD operations, authentication and
+                  session management.
+                </li>
+                <li>
+                  Fix bugs, test and build features across multiple live
+                  projects.
+                </li>
+                <li>
+                  Work with senior developers on new features and production
+                  issues.
+                </li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3>Software Developer Intern</h3>
+              <p class="meta">
+                Mettler-Toledo Pvt Ltd., Mumbai · Mar 2023 – May 2023
+              </p>
+              <ul>
+                <li>
+                  Built a tool in C# (Visual Studio Code) that creates a
+                  complete list of files and folders.
+                </li>
+                <li>
+                  Took part in ISO 9001 training and learned the basics of
+                  quality management.
+                </li>
+                <li>Learned the fundamentals of weighing scale technology.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="wrap">
+          <h2>Skills</h2>
+          <dl class="skills">
+            <dt>Languages</dt>
+            <dd>
+              <div class="chips">
+                <span>PHP</span><span>Python</span><span>JavaScript</span
+                ><span>SQL</span>
+              </div>
+            </dd>
+            <dt>Backend / Frameworks</dt>
+            <dd>
+              <div class="chips"><span>Core PHP</span><span>Django</span></div>
+            </dd>
+            <dt>Frontend</dt>
+            <dd>
+              <div class="chips">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span
+                ><span>Tailwind CSS</span><span>jQuery</span><span>AJAX</span
+                ><span>Chart.js</span>
+              </div>
+            </dd>
+            <dt>Database</dt>
+            <dd>
+              <div class="chips"><span>MySQL</span><span>SQLite</span></div>
+            </dd>
+            <dt>Tools</dt>
+            <dd>
+              <div class="chips">
+                <span>Git</span><span>GitHub</span><span>VS Code</span><span>Eclipse</span><span>Navicat</span>
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="wrap">
+          <h2>Projects</h2>
+          <div class="projs">
+            <article class="proj">
+              <h3>Dynamic Web Applications</h3>
+              <p class="tag">Zeki Software Solutions · Oct 2025 – Present</p>
+              <ul>
+                <li>
+                  Built and improved features for the PFS, SSMS and Books web
+                  applications.
+                </li>
+                <li>
+                  Developed admin panels and dashboards with a responsive UI.
+                </li>
+                <li>
+                  Used AJAX and jQuery to update the page without a reload.
+                </li>
+                <li>Added interactive data visualization with Chart.js.</li>
+              </ul>
+              <div class="stack">
+                <div class="row">
+                  <b>Frontend</b>
+                  <div class="chips">
+                    <span>jQuery</span><span>AJAX</span><span>Chart.js</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <b>Backend</b>
+                  <div class="chips"><span>Core PHP</span></div>
+                </div>
+                <div class="row">
+                  <b>Database</b>
+                  <div class="chips"><span>MySQL</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="proj">
+              <h3>Pharmacy Management System</h3>
+              <p class="tag">E-commerce for medicines · Live · Dec 2024</p>
+              <ul>
+                <li>
+                  E-commerce platform with authentication and product
+                  management.
+                </li>
+                <li>Admin dashboard to manage the store.</li>
+              </ul>
+              <div class="stack">
+                <div class="row">
+                  <b>Frontend</b>
+                  <div class="chips">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <b>Backend</b>
+                  <div class="chips">
+                    <span>Python</span><span>Django</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <b>Database</b>
+                  <div class="chips"><span>SQLite</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="proj">
+              <h3>User Management System</h3>
+              <p class="tag">CRUD application · Live · Dec 2024</p>
+              <ul>
+                <li>Django CRUD app built on the MVT architecture.</li>
+                <li>
+                  Responsive UI with database operations handled through the
+                  ORM.
+                </li>
+              </ul>
+              <div class="stack">
+                <div class="row">
+                  <b>Frontend</b>
+                  <div class="chips">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <b>Backend</b>
+                  <div class="chips">
+                    <span>Python</span><span>Django</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <b>Database</b>
+                  <div class="chips"><span>SQLite</span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="wrap">
+          <h2>Education</h2>
+          <div class="edu">
+            <article>
+              <h3>B.Tech, Computer Science and Engineering</h3>
+              <p>Capital University, Koderma, Jharkhand</p>
+              <p>2022 – 2025</p>
+              <p class="g">CGPA 7.58 / 10</p>
+            </article>
+            <article>
+              <h3>Diploma, Computer Science and Engineering</h3>
+              <p>Integral University, Lucknow, UP</p>
+              <p>2019 – 2022</p>
+              <p class="g">CGPA 9.0 / 10</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <div class="wrap">
+          <h2>Certifications</h2>
+          <ul class="certs">
+            <li>Python for Web Development <small>IBM</small></li>
+            <li>SQL – Basic and Intermediate <small>HackerRank</small></li>
+            <li>Web Designing Basics <small>I.T. Vedant</small></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="wrap">
+          <h2>Contact</h2>
+          <a class="mail" href="mailto:meeranhusain18@gmail.com">meeranhusain18@gmail.com</a>
+          <div class="links">
+            <a class="btn p" href="assets/docs/Meeran_Husain_Resume.pdf" target="_blank" download data-resume>Download resume</a>
+            <a class="btn" href="tel:+917977017708">+91 79770 17708</a>
+            <a class="btn" href="https://www.linkedin.com/in/meeran-husain/" target="_blank" rel="noopener" >LinkedIn</a>
+            <a class="btn" href="https://github.com/MeeranHusain" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">© 2026 Meeran Husain · Mumbai, India</div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/photo-tilt.js"></script>
+    <script src="js/scenes.js"></script>
+  </body>
 </html>
