@@ -33,5 +33,5 @@ Open `index.html` in a browser. Internet is needed for Google Fonts and Three.js
 - Resume: replace `assets/docs/Meeran_Husain_Resume.pdf` (keep the same file name)
 - Photo: replace `assets/images/profile.jpg`
 
-## Deploy
-Upload the whole folder to GitHub Pages, Netlify or Vercel.
+<!-- ## Deploy
+Upload the whole folder to GitHub Pages, Netlify or Vercel. -->
